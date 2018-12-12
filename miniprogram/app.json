@@ -1,18 +1,51 @@
 {
   "pages": [
     "pages/index/index",
-    "pages/userConsole/userConsole",
-    "pages/storageConsole/storageConsole",
-    "pages/databaseGuide/databaseGuide",
-    "pages/addFunction/addFunction",
-    "pages/deployFunctions/deployFunctions",
-    "pages/chooseLib/chooseLib"
+    "pages/assemble/assemble",
+    "pages/order/order",
+    "pages/vipUser/vipUser",
+    "pages/addr/addr",
+    "pages/serviceCity/serviceCity",
+    "pages/loginMethod/loginMethod"
   ],
   "window": {
-    "backgroundColor": "#F6F6F6",
+    "backgroundColor": "#ffffff",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
-    "navigationBarTitleText": "云开发 QuickStart",
-    "navigationBarTextStyle": "black"
-  }
+    "navigationStyle": "default",
+    "navigationBarBackgroundColor": "#19b88c",
+    "navigationBarTitleText": "百果园",
+    "navigationBarTextStyle": "#ffffff"
+  },
+  "tabBar": {
+    "color": "#333333",
+    "selectedColor": "#19b88c",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "及时达",
+        "iconPath": "/images/arrive.png",
+        "selectedIconPath": "/images/arrive1.png"
+      },
+      {
+        "pagePath": "pages/assemble/assemble",
+        "text": "拼团",
+        "iconPath": "/images/assemble.png",
+        "selectedIconPath": "/images/assemble1.png"
+      },
+      {
+        "pagePath": "pages/order/order",
+        "text": "订单",
+        "iconPath": "/images/order.png",
+        "selectedIconPath": "/images/order1.png"
+      },
+      {
+        "pagePath": "pages/vipUser/vipUser",
+        "text": "会员",
+        "iconPath": "/images/user.png",
+        "selectedIconPath": "/images/user1.png"
+      }
+    ]
+  },
+  "debug": false,
+  "functionalPages": true
 }

@@ -1,0 +1,7 @@
+<!--miniprogram/pages/givePowerLogin/loginMethod.wxml-->
+<view class='main'>
+  <image src='../../images/xigua.png'></image>
+  <text class='title'>百果园+</text>
+  <button class='wechatlogin' bindtap='confirmLogin'>微信用户快捷登录</button>
+  <button class='phonelogin' plain>手机号登录注/册</button>
+</view>

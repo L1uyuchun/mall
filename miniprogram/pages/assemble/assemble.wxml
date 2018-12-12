@@ -1,0 +1,20 @@
+<!--miniprogram/pages/assemble/assemble.wxml-->
+<view class='addr'>
+  <image src='../../images/location.png' class='location'></image>
+  <text>提货门店：{{storeAddr}}</text>
+  <image src='../../images/rightArrow.png' class='rightImg'></image>
+</view>
+<view class='assemble_item' wx:for='{{assembleArray}}'>
+   <view class='assemPerson'>{{item.assemPerson}}</view>
+   <view class='recommend'>好吃推荐</view>
+   <image src="{{item.imaurl}}"></image>
+   <text class='goods_name'>{{item.name}}</text>
+   <text class='amount'>{{item.amount}}</text>
+   <view class='goods_bottom'>
+     <text class='price'>￥{{item.price}}</text>
+     <text class='oldPrice'>￥{{item.oldPrice}}</text>
+     <text class='sale'>已团{{item.saleamount}}件</text>
+     <text class='assemBtn'>去拼团</text>
+   </view>
+
+</view>

@@ -1,0 +1,108 @@
+/* miniprogram/pages/assemble/assemble.wxss */
+.addr{
+  width: 100%;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+}
+.addr .location{
+  width:29rpx;
+  height: 21rpx;
+  display: inline-block; 
+}
+.addr .rightImg{
+   width: 26rpx;
+   height: 40rpx;
+   display: inline-block;
+   vertical-align: middle;
+
+}
+.addr text{
+  display: inline-block;
+  height: 50rpx;
+  line-height: 50rpx;
+  margin-left: 6rpx
+}
+.assemble_item{
+  margin: 20rpx;
+  padding: 16rpx 16rpx 20rpx 16rpx;
+  border-radius: 10rpx;
+  box-shadow: 2rpx 2rpx 5rpx #cccccc;
+  position: relative
+}
+.assemble_item .assemPerson,
+.assemble_item .recommend{
+  width: 100rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  background-color: orange;
+  /* border-radius: 10rpx; */
+  border-top-left-radius: 15rpx;
+  border-bottom-right-radius: 15rpx;
+  position: absolute;
+  top: 0rpx;
+  left: 0rpx;
+  text-align: center;
+  color: #ffffff;
+}
+.assemble_item .recommend{
+  position: absolute;
+  top: 2rpx;
+  left: 545rpx;
+  border-radius: 0rpx;
+  border-top-left-radius: 10rpx;
+  border-top-right-radius: 10rpx;
+  font-size: 20rpx;
+  font-weight: bold;
+   width: 120rpx;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+.assemble_item image{
+  width: 100%;
+  height: 215rpx;
+}
+.assemble_item .goods_name{
+  width: 100%;
+  font-size: 28rpx;
+  color: #000000;
+  display: block;
+  line-height: 42rpx;
+}
+.assemble_item .amount{
+  color: #999999;
+  font-size: 22rpx;
+  display: block;
+  margin-bottom:20rpx;
+}
+.assemble_item .goods_bottom{
+  
+}
+.assemble_item .goods_bottom .price{
+  font-size: 28rpx;
+  color: orange;
+  margin-right: 10rpx;
+}
+.assemble_item .goods_bottom .oldPrice{
+   text-decoration: line-through;
+   font-size: 20rpx;
+   margin-right: 20rpx;
+}
+.assemble_item .goods_bottom .sale{
+  color: #cccccc;
+  font-size: 20rpx;
+}
+.assemble_item .goods_bottom .assemBtn{
+  display: inline-block;
+  width: 110rpx;
+  height: 45rpx;
+  line-height: 45rpx;
+  border-radius: 15rpx;
+  background-color: orange;
+  margin-left: 286rpx;
+  font-size: 25rpx;
+  color: #ffffff;
+  border:none;
+  text-align: center
+  
+}

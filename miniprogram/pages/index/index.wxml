@@ -1,43 +1,24 @@
-<!--index.wxml-->
-<view class="container">
+<view class="top">
+  <text class='text'>59分钟达</text>
+  <input type='input' placeholder='配送至：{{locationaddr}}' placeholder-class='placeholdertext' disabled bindtap='selectAddr'></input>
+  <image src='../../images/sweepcode.png' class='sweepcode'></image>
+</view>
+<view class='bottom'>
+  <scroll-view class='leftClassification' scroll-y>
+    <view class="item" wx:for="{{classArray}}">{{item}}</view>
+  </scroll-view>
 
-  <!-- 用户 openid -->
-  <view class="userinfo">
-    <button 
-      open-type="getUserInfo" 
-      bindgetuserinfo="onGetUserInfo"
-      class="userinfo-avatar"
-      style="background-image: url({{avatarUrl}})"
-    ></button>
-    <view>
-      <button class="userinfo-nickname" bindtap="onGetOpenid">点击获取 openid</button>
+  <scroll-view class='right' scroll-y>
+    <image src='../../images/timg.jpg'></image>
+
+    <view class='item_goods' wx:for='{{goodsItems}}'>
+      <image src='{{item.goodsImg}}'></image>
+      <view class='goods_details'>
+         <text class='goods_tit'>{{item.name}}</text>
+         <text class='small_details'>{{item.small_details}}</text>
+         <view class='spreat'><text class='pirce'>￥{{item.price}}</text><text class='oldpirce'>￥{{item.oldPrice}}</text><image src='../../images/add.png'></image></view>
+      </view>
     </view>
-  </view>
 
-
-  <!-- 上传图片 -->
-  <view class="uploader">
-    <view class="uploader-text" bindtap="doUpload">
-      <text>上传图片</text>
-    </view>
-    <view class="uploader-container" wx:if="{{imgUrl}}">
-      <image class="uploader-image" src="{{imgUrl}}" mode="aspectFit" bindtap="previewImg"></image>
-    </view>
-  </view>
-
-
-  <!-- 操作数据库 -->
-  <view class="uploader">
-    <navigator url="../databaseGuide/databaseGuide" open-type="navigate" class="uploader-text">
-      <text>前端操作数据库</text>
-    </navigator>
-  </view>
-
-  <!-- 新建云函数 -->
-  <view class="uploader">
-    <navigator url="../addFunction/addFunction" open-type="navigate" class="uploader-text">
-      <text>快速新建云函数</text>
-    </navigator>
-  </view>
-
+  </scroll-view>
 </view>

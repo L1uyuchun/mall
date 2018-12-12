@@ -1,0 +1,9 @@
+<!--miniprogram/pages/serviceCity/serviceCity.wxml-->
+<view class='serCity'>
+  <image src='../../images/location.png' class='local'></image>
+  <text>已开通服务的城市</text>
+</view>
+<view class='cityBox'>
+  <view class='city' wx:for='{{cityArray}}'>{{item}}</view>
+</view>
+

@@ -1,0 +1,32 @@
+/* miniprogram/pages/serviceCity/serviceCity.wxss */
+.serCity{
+  height: 80rpx;
+  line-height: 80rpx;
+}
+page{
+ background-color: #eeeeee;
+}
+.local{
+  width: 30rpx;
+  height: 25rpx;
+  vertical-align: top;
+  padding-top: 28rpx;
+  margin-left: 20rpx;
+}
+.cityBox{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   padding: 0rpx 0rpx 0rpx 40rpx;
+}
+.city{
+ width: 150rpx;
+ height: 50rpx;
+ line-height: 50rpx;
+ background-color: #ffffff;
+ font-size: 22rpx;
+ text-align: center;
+ border-radius: 10rpx;
+ margin-right: 20rpx;
+ margin-bottom: 20rpx;
+}

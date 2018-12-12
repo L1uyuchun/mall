@@ -1,0 +1,15 @@
+<!--miniprogram/pages/addr/addr.wxml-->
+<view class='topSearch'>
+  <text class='province' bindtap='selectCity'>成都市<text class='arrow'></text>
+  </text>
+  <input type='text' placeholder='请输入收货地址' class='inputAddr' bindinput='getInPutValue'></input>
+</view>
+<view class='warning' style='display:{{isshow1}}'>因各地区商品可能存在差异，请选择准确收货地址</view>
+<view class='location_tit'  style='display:{{isshow1}}'>当前地区</view>
+<view class='locationdetails' style='display:{{isshow1}}'>{{locationAddr}}<text class='regetLoca' bindtap='reGetLocal'>重新定位</text></view>
+<view class='location_tit' style='display:{{isshow1}}'>附近地区</view>
+<view class='nearAddr' wx:for="{{nearAddr}}" style='display:{{isshow1}}'>{{item}}</view>
+<view class='addAddr' bindtap='addNewAddr'>新增收货地址</view>
+<view class='tips' style="display:{{isshow2}}">
+   <view class='tipsItem' wx:for="{{tipsAddr}}" wx:key="*this" bindtap='setAddr' data-addr='{{item.address}}'>{{item.address}}</view>
+</view>

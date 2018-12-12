@@ -1,0 +1,11 @@
+<!--miniprogram/pages/order/order.wxml-->
+<view class='topNav'>
+  <text class="{{arrive?'cur':''}}" bindtap='arrive'>及时达</text>
+  <text class="{{assemble?'cur':''}}" bindtap='assemble'>拼团</text>
+  <text class="{{storeOrder?'cur':''}}" bindtap='storeOrder'>门店订单</text>
+</view>
+<view class='noLogin'>
+  <image src='../../images/arrive1.png'></image>
+  <text class='tips'>马上下单，畅享生活好生活</text>
+  <button size='mini'>立即登录</button>
+</view>
